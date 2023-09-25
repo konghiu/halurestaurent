@@ -1,0 +1,44 @@
+.introduction .introduction__history .history__title {
+     font-weight: bold;
+     font-size: 26px;
+}
+
+.introduction .introduction__history > div::after {
+     content: "";
+     position: absolute;
+     height: 100%;
+     width: 2px;
+     background-color: var(--main-color);
+     left: 50%;
+     top: 0;
+     transform: translateX(-50%);
+}
+
+.introduction .introduction__history .history__detail {
+     font-size: 14px;
+     line-height: 24px;
+}
+
+.introduction .introduction__history .history__year::after {
+     content: "";
+     position: absolute;
+     width: 2rem;
+     height: 1px;
+     border-top: 1px solid var(--main-color);
+     left: 125%;
+     top: 50%;
+     transform: translateY(-50%);
+}
+
+/* history reverse */
+.introduction .introduction__history .history-reverse > div:nth-child(1),
+.introduction .history-reverse {
+     flex-direction: row-reverse;
+}
+.introduction .history-reverse .history__year {
+     float: left;
+     margin-right: 40%;
+}
+.introduction .history-reverse .history__year::after {
+     left: -75%;
+}

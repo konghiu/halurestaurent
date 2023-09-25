@@ -1,0 +1,49 @@
+.collections__right > div:nth-child(1) svg {
+     width: 30px;
+     height: 30px;
+     padding: 6px;
+     border: 1px solid #ccc;
+     border-radius: 0.25rem;
+}
+
+.collections__right .product {
+     border-radius: 0.25rem !important;
+}
+
+.collections__right .icon__changeLayout-choose {
+     background-color: var(--main-color);
+     color: white;
+     border-color: var(--main-color) !important;
+}
+
+.collections__right .layout__line {
+     grid-template-columns: 1fr;
+     gap: 0.5rem;
+     row-gap: 0;
+}
+.collections__right .layout__line .product {
+     width: 100% !important;
+     display: flex !important;
+     align-items: flex-start;
+}
+.collections__right .layout__line .product .product__image {
+     width: 240px;
+     margin-right: 4rem;
+}
+.collections__right .layout__line .product > div:nth-child(2) {
+     flex: 1;
+}
+.collections__right .layout__line .product .product__price {
+     display: block;
+     margin-bottom: 0.5rem;
+}
+.collections__right .layout__line .product .product__eye {
+     position: relative;
+     left: 1.5rem;
+     top: 0;
+     display: inline;
+}
+.collections__right .layout__line .product svg {
+     float: left;
+     border-radius: 0.25rem;
+}

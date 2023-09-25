@@ -1,0 +1,232 @@
+.adminList,
+.adminList .adminList__table,
+.adminList .adminList__table tbody {
+    width: 100%;
+}
+.adminList__table tr:nth-child(even) {
+    background-color: #dddddd !important;
+}
+.adminList .adminList__table thead th {
+    padding: 1rem 0;
+}
+.adminList .adminList__table th {
+    border: 1px solid #999;
+}
+.adminList .adminList__table tbody th {
+    margin: 0.5rem 0;
+    box-sizing: content-box;
+    font-weight: normal;
+}
+
+.adminList__table .table__image {
+    width: 100px;
+    padding: 0 1rem;
+}
+
+#account aside {
+    position: relative;
+    width: 25%;
+    background-color: #292c39;
+    padding: 1.5rem 0;
+    color: #c1c1c1;
+    min-height: 500px;
+}
+#account aside .account__avt {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.25rem;
+    overflow: hidden;
+}
+#account aside h3,
+#account aside small {
+    padding: 0 2rem;
+}
+#account aside h3 {
+    color: #fff;
+}
+#account aside small {
+    padding-bottom: 1rem;
+    display: block;
+    border-bottom: 1px dashed #7f7f7f;
+}
+#account .account__listpath .account__listpath-choose {
+    border-left: 5px solid var(--main-color);
+    padding-left: calc(2rem - 5px);
+    color: #fff;
+}
+#account .account__listpath li {
+    padding: 0.5rem 2rem;
+}
+
+#account .account__outlet {
+    padding: 1rem 0rem 1.5rem 2rem;
+    flex: 1;
+}
+
+/* account__outlet */
+#account .account__outlet h3 {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+}
+
+/* changePassword */
+#account .changePassword {
+    color: #292c39;
+}
+#account .changePassword form {
+    width: 500px;
+}
+#account .changePassword form small,
+#account .changePassword form label,
+#account .changePassword form input {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 14px;
+}
+#account .changePassword form label span {
+    color: red;
+}
+#account .changePassword form input {
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+#account .changePassword form small {
+    font-size: 12px;
+}
+
+/* transaction */
+
+#account .transaction__header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#account .transaction__header div p {
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+#account .transaction__header .transaction__header-chose p {
+    background-color: white;
+    color: var(--main-color);
+}
+#account .transaction__header .transaction__header-chose button {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+#account .transaction__header div button {
+    font-size: 14px;
+    margin: 0.25rem 0;
+}
+#account .transaction__header div button:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+#account .transaction table th {
+    font-size: 14px;
+    text-align: left;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+#account .transaction table th:not(:nth-child(3)) {
+    width: calc(100% / 6);
+}
+#account .transaction table thead {
+    background-color: var(--main-color);
+    color: white;
+}
+#account .transaction table thead th {
+    font-weight: bold !important;
+}
+#account .transaction table thead th:not(th:last-child) {
+    border-right-color: white;
+}
+
+#account .addresses .list__address ul {
+    padding: 2rem 0;
+    border-top: 1px solid #dddddd;
+}
+#account .addresses .list__address ul:first-child {
+    border: none;
+}
+#account .addresses .list__address li {
+    line-height: 2rem;
+    font-size: 14px;
+    color: #565656;
+}
+
+/* address box */
+#account .addressBox {
+    width: calc(var(--container) - 20%);
+    z-index: 11;
+    padding: 2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+        -5px -5px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 0.5rem;
+}
+#account .addressBox label {
+    font-size: 14px;
+}
+#account .addressBox input:not(input[type="checkbox"]) {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0 0.25rem;
+    border: 1px solid #c1c1c1;
+    border-radius: 0.25rem;
+    font-size: 14px;
+}
+#account .addressBox small {
+    color: red;
+}
+#account .addressBox form .form__address {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+#account .addressBox form .form__address div {
+    width: 100%;
+}
+#account .addressBox form .form__buttons button:nth-child(1) {
+    border: 1px solid #e4e4e4;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.25rem;
+    transition: all 0.1 ease;
+}
+#account .addressBox form .form__buttons button:nth-child(1):hover {
+    background-color: #7f7f7f;
+    border-color: #7f7f7f;
+    color: white;
+}
+#account .addressBox form .form__buttons .main__button {
+    font-weight: bold !important;
+}
+
+#account .boxUpdateAvt .boxUpdateAvt__buttons .main__button {
+    color: white;
+}
+#account .boxUpdateAvt .boxUpdateAvt__buttons button:nth-child(1) {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #565656;
+}
+#account .boxUpdateAvt .boxUpdateAvt__buttons button:nth-child(1):hover {
+    background-color: rgb(73, 73, 73) !important;
+    color: white;
+}
+#account .boxUpdateAvt .boxUpdateAvt__buttons button:nth-child(3) {
+    background-color: rgb(88, 88, 254) !important;
+}

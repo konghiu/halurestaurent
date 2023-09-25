@@ -1,0 +1,197 @@
+#section1 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.home__h1 {
+     color: var(--main-color);
+     font-size: 26px;
+     font-style: italic;
+     font-weight: 600;
+     letter-spacing: 0.25px;
+     line-height: 47.6px;
+}
+.home__h2 {
+     font-family: monospace, "Quicksand";
+     color: #333333;
+     font-size: 30px;
+     font-weight: 900;
+     letter-spacing: 0.3px;
+     line-height: 42px;
+}
+
+.section1__banners {
+     display: flex;
+     margin-top: -100px;
+}
+.section1__banners > div {
+     padding: 0 1rem;
+}
+.section1__banners > div:nth-child(1) {
+     flex: 0 0 41.66%;
+     max-width: 41.66%;
+}
+.section1__banners > div:nth-child(2) {
+     flex: 0 0 33.333%;
+     max-width: 33.333%;
+}
+.section1__banners > div:nth-child(2) > div {
+     margin-bottom: 1rem;
+}
+
+.section1__banners > div:nth-child(3) {
+     flex: 0 0 24.672%;
+     max-width: 24.672%;
+}
+
+.section1__banners .item {
+     position: relative;
+     overflow: hidden;
+     border-radius: 0.5rem;
+}
+.section1__banners .item::before,
+.section1__banners .item::after {
+     content: "";
+     position: absolute;
+     background-color: rgb(0, 0, 0, 0.2);
+     width: 200%;
+     height: 200%;
+     left: 70%;
+     top: 70%;
+     transition: all 0.5s ease;
+     transform: rotate(45deg);
+}
+.section1__banners .item::before {
+     left: -170%;
+     top: -170%;
+}
+.section1__banners .item:hover::before,
+.section1__banners .item:hover::after {
+     left: -30%;
+     top: -30%;
+}
+
+.section1__banners .item2::before {
+     left: -190%;
+     top: -190%;
+     transform: rotate(-45deg);
+}
+.section1__banners .item2::after {
+     left: 90%;
+     top: 90%;
+     transform: rotate(-45deg);
+}
+.section1__banners .item2:hover::before,
+.section1__banners .item2:hover::after {
+     left: -50%;
+     top: -50%;
+}
+
+.section1__banners .item4:hover::before,
+.section1__banners .item4:hover::after {
+     left: -50%;
+     top: -50%;
+}
+
+/*  service shopping */
+.section1__serviceShipping .item {
+     display: flex;
+     align-items: center;
+     padding: 1rem 2rem;
+     border: 2px dashed #ccc;
+     border-radius: 0.75rem;
+}
+.section1__serviceShipping .item:hover {
+     border-color: var(--main-color);
+}
+.section1__serviceShipping .item .item__image {
+     width: 70px;
+     margin-right: 0.5rem;
+}
+.section1__serviceShipping .item .item__content p {
+     font-family: "Quicksand", "Tahoma", sans-serif;
+     color: #999999;
+}
+
+/* section 2 */
+.section2 {
+     padding: 3rem 0 2rem;
+     background-color: #f7f4ef;
+}
+.section2 .container__content h2 {
+     color: #fec200;
+     font-size: 26px;
+     font-weight: 900;
+     letter-spacing: 0.26px;
+     line-height: 28px;
+     margin: 20px 0px 10px;
+     font-style: italic;
+}
+
+.section2 .container__content h1 {
+     color: #111111;
+     font-size: 39px;
+     font-weight: 600;
+     letter-spacing: 0.4px;
+     line-height: 44px;
+     margin: 20px 0px 10px;
+}
+.section2 .container__content p {
+     font-family: "Trebuchet MS", "Lucida Sans Unicode";
+     color: #333333;
+     font-size: 14px;
+     font-weight: 500;
+     letter-spacing: 0.25px;
+     line-height: 23.8px;
+     margin: 0px 0px 15px;
+}
+
+.section2 .container__content button:hover {
+     opacity: 0.7;
+}
+
+.section2 .section2__images .item img {
+     border-radius: 0.5rem;
+     transition: all 0.5s ease-in-out;
+}
+
+.section2 .section2__images .item img:hover {
+     transform: translateY(-1.25rem);
+}
+/* section 3 */
+/* section 4 */
+.section4 {
+     padding: 4rem;
+     background-color: rgba(254, 194, 0, 0.15);
+}
+.section4 h1 {
+     font-size: 24px;
+     font-weight: 700;
+     letter-spacing: 0.24px;
+     line-height: 30px;
+     margin: 20px 0px 10px;
+}
+
+.section4 p {
+     color: #333333;
+     font-size: 14px;
+     letter-spacing: 0.25px;
+     line-height: 23.8px;
+     margin: 0px 0px 15px;
+}
+
+/* section 5 */
+.section5 .section5__boxProduct {
+     background-image: url("../../../../assets/images/bg1-h4.webp");
+}
+.section5 > div:nth-child(2) {
+     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* section 6 */
+.section6 {
+     background-color: #f7f2e2;
+}
+
+/* section 7 */

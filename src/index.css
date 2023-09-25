@@ -1,13 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+     .main__bg {
+          background-color: var(--main-color);
+     }
+     .main__color {
+          color: var(--main-color);
+     }
+     .border-1 {
+          border: 1px solid #ccc;
+     }
+     .border-t-1 {
+          border-top: 1px solid #ccc;
+     }
+     .border-b-1 {
+          border-bottom: 1px solid #ccc;
+     }
+     .border-l-1 {
+          border-left: 1px solid #ccc;
+     }
+     .border-r-1 {
+          border-right: 1px solid #ccc;
+     }
+     .main__border-color {
+          border-color: var(--main-color);
+     }
+     .none__copy {
+          -moz-user-select: none !important;
+          -webkit-touch-callout: none !important;
+          -webkit-user-select: none !important;
+          -khtml-user-select: none !important;
+          -moz-user-select: none !important;
+          -ms-user-select: none !important;
+          user-select: none !important;
+     }
+     .limit__line {
+          display: -webkit-box;
+          text-overflow: ellipsis;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          -webkit-line-clamp: 2;
+     }
+     .litmit_1 {
+          -webkit-line-clamp: 1 !important;
+     }
+
+     .litmit-3 {
+          -webkit-line-clamp: 3;
+     }
+     .litmit-4 {
+          -webkit-line-clamp: 4;
+     }
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     transition: background 0.5s ease;
+     outline: none;
+     list-style: none;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+     margin: 0;
+     font-family: "Lucida Sans Unicode";
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+     /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+          monospace; */
+     font-family: "Quicksand", "Tahoma", sans-serif;
+}
+
+svg,
+a,
+i {
+     display: inline-block;
+}
+
+table {
+     width: 100%;
+}
+th {
+     font-weight: normal;
+}
+
+.center {
+     display: flex;
+     justify-content: center;
+}
+
+:root {
+     --container: 1170px;
+     --width-aside: 300px;
+     --main-color: #fec200;
+     --sub-color: #292c39;
+     --custom-green: #00a149;
+}
+
+img {
+     width: 100%;
+}
+
+.main-bg {
+     background-color: var(--main-color);
+}
+.sub-bg {
+     background-color: var(--sub-color);
+}
+.sub-tx {
+     color: var(--sub-color);
+}
+.main-tx {
+     color: var(--main-color);
+}
+
+.main__button {
+     background-color: var(--main-color);
+     padding: 0.5rem 1.5rem;
+     border-radius: 0.25rem;
+     font-weight: 500;
+     font-size: 14px;
+}
+.main__button:hover {
+     opacity: 0.7;
+}
+
+.banner__black {
+     position: fixed;
+     left: 0;
+     top: 0;
+     height: 100%;
+     width: 100%;
+     background-color: rgba(0, 0, 0, 0.3);
+}
+
+.input__sign {
+     margin-bottom: 1rem;
+}
+.input__sign input,
+.input__sign label {
+     display: block;
+}
+.input__sign label {
+     margin-bottom: 0.25rem;
+     font-weight: bold;
+}
+.input__sign input {
+     border: 1px solid #ccc;
+     padding: 0.5rem 0.5rem 0.5rem 1rem;
+     width: 100%;
+}
+.input__sign small {
+     color: red;
+}
+
+.container {
+     width: var(--container) !important;
+}
+
+aside {
+     width: var(--width-aside) !important;
+}
+@media (min-width: 992px) {
+     .container {
+          width: 970px;
+     }
+}
+@media (min-width: 768px) {
+     .container {
+          width: 750px;
+     }
 }

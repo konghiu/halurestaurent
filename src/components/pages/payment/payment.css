@@ -1,0 +1,53 @@
+#payment {
+     color: #474747;
+}
+#payment label,
+#payment input:not(input[type="radio"]) {
+     display: block;
+     width: 100%;
+     color: #474747;
+}
+#payment label {
+     margin: 0.25rem 0;
+}
+#payment input:not(input[type="radio"]) {
+     padding: 0.5rem 1rem;
+     border-radius: 0.25rem;
+}
+#payment .input__error {
+     color: red;
+}
+#payment .payment__consumer input:not(input[type="radio"]) {
+     background-color: #f7f3e5;
+     border: 1px solid #efcc86;
+}
+#payment .text-muted {
+     font-size: 20px;
+     font-weight: bold;
+}
+
+.payment__list > li {
+     border: 1px solid #ccc;
+     border-top: 0;
+     padding: 1rem;
+}
+.payment__item:first-child {
+     border-top: 1px solid #ccc;
+}
+
+.payment__voucher {
+     display: flex;
+     border: 1px solid #ccc;
+     border-radius: 0.25rem;
+     gap: 1rem;
+     overflow: hidden;
+}
+.payment__voucher input {
+     display: block;
+}
+.payment__voucher button {
+     width: 25%;
+     font-size: 14px;
+     background-color: #474747;
+     color: #fff;
+}

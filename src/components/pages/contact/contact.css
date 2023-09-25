@@ -1,0 +1,21 @@
+.contact h1 {
+     font-weight: bold;
+     margin-bottom: 1rem;
+}
+.contact__address p {
+     font-size: 14px;
+     line-height: 24px;
+}
+
+.contact__form textarea,
+.contact__form input {
+     border: 1px solid #c1c1c1;
+     margin-bottom: 0.5rem;
+     border-radius: 0.125rem;
+     padding: 0.25rem 1rem;
+}
+
+.contact__form form input:nth-child(1),
+.contact__form form input:nth-child(2) {
+     width: calc(50% - 1rem);
+}

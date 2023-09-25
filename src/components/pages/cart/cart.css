@@ -1,0 +1,46 @@
+.cart table th {
+     border: 1px solid #ccc;
+     font-size: 14px;
+}
+.cart table thead th {
+     font-weight: normal;
+     padding: 1rem 0;
+     color: var(--main-color);
+}
+
+.cart table .table__image {
+     width: 15%;
+}
+.cart table .table__image div {
+     padding: 2rem;
+}
+
+.cart table thead th:nth-child(5),
+.cart table thead th:nth-child(4),
+.cart table thead th:nth-child(3),
+.cart table thead th:nth-child(1) {
+     width: 15%;
+}
+.cart table thead th:last-child {
+     width: 5%;
+}
+
+.cart .table__quantity span {
+     padding: 0.25rem 0;
+     display: block;
+     border: 1px solid #eee;
+     text-align: center;
+}
+.cart .table__quantity span:not(span:nth-child(2)):hover {
+     background-color: var(--main-color);
+     color: white;
+}
+.cart .table__quantity span:not(span:nth-child(2)) {
+     cursor: pointer;
+     width: 15%;
+}
+.cart .table__quantity span:nth-child(2) {
+     width: 20%;
+     border-left: none;
+     border-right: none;
+}

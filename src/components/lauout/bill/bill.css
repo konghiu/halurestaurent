@@ -1,0 +1,45 @@
+/* bill */
+
+.bill {
+    width: 350px;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #ccc;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.bill h2,
+.bill h5 {
+    font-weight: bold;
+}
+.bill div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.bill .bill__fromto {
+    margin: 1rem 0;
+}
+.bill .bill__fromto > div {
+    display: block;
+}
+.bill .bill__products th {
+    font-weight: normal !important;
+}
+
+.bill .bill__products th {
+    border-bottom: 1px solid #ccc;
+    padding: 0.25rem 0;
+}
+.bill .bill__products th:nth-child(1),
+.bill .bill__products th:nth-child(2) {
+    text-align: left;
+}
+.bill .bill__products th:last-child {
+    text-align: right;
+}
+
+.bill .bill__total {
+    text-align: right;
+    margin: 1rem 0;
+}

@@ -1,0 +1,36 @@
+.notify__admin small {
+    border-radius: 50%;
+    color: white;
+    background-color: var(--main-color);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -0.5rem;
+    font-weight: bold;
+}
+.notify__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    padding: 1rem 2rem;
+    left: 0;
+    background-color: white;
+    width: max-content;
+    color: black;
+    height: fit-content;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+        -5px -5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.notify__list .notify__unchecked,
+.notify__list .notify__checked {
+    padding: 0.5rem 1rem;
+    margin-bottom: 5px;
+}
+.notify__list .notify__unchecked {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: rgba(255, 204, 0, 0.2);
+}

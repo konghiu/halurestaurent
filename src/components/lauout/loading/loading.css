@@ -1,0 +1,36 @@
+.loading {
+     z-index: 100;
+}
+.loading div {
+     display: flex;
+     gap: 0.5rem;
+}
+.loading div span {
+     width: 10px;
+     height: 10px;
+     border-radius: 50%;
+     background-color: var(--main-color);
+     animation: loading 0.7s linear infinite;
+}
+
+@keyframes loading {
+     0% {
+          transform: translateY(0);
+     }
+     50% {
+          transform: translateY(-2rem);
+     }
+     100% {
+          transform: translateY(0);
+     }
+}
+
+.loading div span:nth-child(1) {
+     animation-delay: 0s;
+}
+.loading div span:nth-child(2) {
+     animation-delay: 0.175s;
+}
+.loading div span:nth-child(3) {
+     animation-delay: 0.35s;
+}
