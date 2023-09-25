@@ -30,6 +30,7 @@ const UpdateAvatarBox = ({ user, setOpenBox }) => {
                 headers: {
                     Authorization: "Bearer " + user.accessToken,
                 },
+                 withCredentials: true,
             })
             .then((res) => {
                 setTimeout(() => {
