@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/halurestaurent/static/css/main.60d8508d.css",
-    "main.js": "/halurestaurent/static/js/main.72190475.js",
+    "main.css": "/halurestaurent/static/css/main.4b3b24b9.css",
+    "main.js": "/halurestaurent/static/js/main.cbf0d187.js",
     "static/js/787.cda612ba.chunk.js": "/halurestaurent/static/js/787.cda612ba.chunk.js",
     "static/media/home_bg_slide_1.webp": "/halurestaurent/static/media/home_bg_slide_1.4812ab03cbdfee141fbb.webp",
     "static/media/bg-newsletter.webp": "/halurestaurent/static/media/bg-newsletter.c2cd294c99392002c02f.webp",
@@ -33,12 +33,12 @@
     "static/media/ic_home_shipping2.webp": "/halurestaurent/static/media/ic_home_shipping2.4b0080ff02e53c790e18.webp",
     "static/media/slick.woff": "/halurestaurent/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/halurestaurent/index.html",
-    "main.60d8508d.css.map": "/halurestaurent/static/css/main.60d8508d.css.map",
-    "main.72190475.js.map": "/halurestaurent/static/js/main.72190475.js.map",
+    "main.4b3b24b9.css.map": "/halurestaurent/static/css/main.4b3b24b9.css.map",
+    "main.cbf0d187.js.map": "/halurestaurent/static/js/main.cbf0d187.js.map",
     "787.cda612ba.chunk.js.map": "/halurestaurent/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.60d8508d.css",
-    "static/js/main.72190475.js"
+    "static/css/main.4b3b24b9.css",
+    "static/js/main.cbf0d187.js"
   ]
 }
